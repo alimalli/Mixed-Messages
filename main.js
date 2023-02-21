@@ -8,11 +8,16 @@ const goal = ["triumph.", "reality. ", "greatness.", "the impossible.", "the ext
 
 const quotes = [action, body, goal];
 
+// Generate random index
+const randomIndex = (arr) => {
+    return Math.floor(Math.random() * arr.length)
+}
+
 // Create random motivational messages
-const motivational = (quotes) => {
+const motivational = (arr) => {
     motivationalQuote = "";
-    for (let i = 0; i < quotes.length; i++) {
-        motivationalQuote = quotes[0][(Math.floor(Math.random() * quotes[0].length))] + quotes[1][(Math.floor(Math.random() * quotes[1].length))] + quotes[2][(Math.floor(Math.random() * quotes[2].length))];
+    for (let i = 0; i < arr.length; i++) {
+        motivationalQuote += arr[i][randomIndex(arr[i])];
     }
     return motivationalQuote;
 }
