@@ -6,14 +6,15 @@ const action = ["Focus", "Determination", "Hustling", "Patience", "Hard work", "
 const body = [" on ", " holds ", " will lead to ", " manifests ", " creates ", " results in "];
 const goal = ["triumph.", "reality. ", "greatness.", "the impossible.", "the extraordinary."];
 
+// array to hold parts of the quote
 const quotes = [action, body, goal];
 
 // Generate random index
 const randomIndex = (arr) => {
-    return Math.floor(Math.random() * arr.length)
+    return Math.floor(Math.random() * arr.length);
 }
 
-// Create random motivational messages
+// Create random motivational quotes
 const motivational = (arr) => {
     motivationalQuote = "";
     for (let i = 0; i < arr.length; i++) {
