@@ -2,11 +2,11 @@
 // Goal: Output a different randomized message each time the program is run
 // Theme: Inspirational Messages
 
-const action = ["Focus", "Today", "Determination", "Dreams", "Everything"];
-const body = [" on ", " holds ", " will lead to ", " manifests "];
-const goal = ["triumph.", "reality. ", "greatness."];
+const action = ["Focus", "Determination", "Hustling", "Patience", "Hard work", "Bravery", "Passion"];
+const body = [" on ", " holds ", " will lead to ", " manifests ", " creates ", " results in "];
+const goal = ["triumph.", "reality. ", "greatness.", "the impossible.", "the extraordinary."];
 
-const quotes = [action, body, goal]
+const quotes = [action, body, goal];
 
 // Create random motivational messages
 const motivational = (quotes) => {
